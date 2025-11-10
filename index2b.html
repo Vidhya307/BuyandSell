@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoHub – Buy & Sell Cars & Bikes</title>
+  <link rel="stylesheet" href="style2b.css" />
+</head>
+<body>
+  <header>
+    <h1>🚘 AutoHub – Buy & Sell Used Cars & Bikes 🏍️</h1>
+  </header>
+
+  <main>
+    <section class="post-form">
+      <h2>Post Your Ad</h2>
+      <input type="text" id="title" placeholder="Enter title (e.g., Honda Activa 2019)" />
+      <input type="text" id="price" placeholder="Enter price (₹)" />
+      <textarea id="description" placeholder="Describe your vehicle"></textarea>
+      <input type="url" id="image" placeholder="Enter image URL (optional)" />
+      <select id="category">
+        <option value="Car">Car</option>
+        <option value="Bike">Bike</option>
+      </select>
+      <button onclick="postAd()">Post Ad</button>
+      <button onclick="clearAll()">Clear All Ads</button>
+
+    </section>
+
+    <section class="ads">
+      <h2>Available Listings</h2>
+      <div id="adList" class="ad-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 AutoHub – Find your perfect ride 🛞
+  </footer>
+
+  <script src="script2b.js"></script>
+</body>
+</html>
